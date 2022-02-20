@@ -43,6 +43,7 @@ The student will be more likely selected if he/she:
 - [Casbin.js](#casbinjs)
 - [Casbin for Lua](#casbin-for-lua)
 - [Casbin for Dart](#casbin-for-dart)
+- [Casbin for Swift](#casbin-for-swift)
 
 ### Casbin Core Engine (Golang)
 
@@ -376,3 +377,23 @@ The current progress is: https://github.com/casbin/dart-casbin
 #### Mentor
 
 [Tomás Arias](https://github.com/KNawm), Casbin member
+
+### Casbin for Swift
+
+#### Description
+
+We already have a Swift version Casbin called [SwiftCasbin](https://github.com/casbin/SwiftCasbin.git). It already works on all primary OSs, like Windows, Linux, macOS,iOS,tvOS,watchOS. Most of Casbin's functionalities (for example 90%) should work. There are still many bugs and missing features in SwiftCasbin. Moreover, we also need to make authz middlewares for any  Swift projects:
+
+1. Server-Side like Vapor and adapters for DB.
+2. A frontend developer friendly API for UI frameworks like UIKit,SwiftUI.
+
+The current progress is: https://github.com/casbin/SwiftCasbin
+
+#### Requirements
+
+1. Swift
+2. Golang (only need to read code)
+
+#### Mentor
+
+[Xiaobei](https://github.com/xiaobeiswift), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
