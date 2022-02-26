@@ -135,33 +135,28 @@ The current progress is: https://github.com/casbin/casnode
 
 #### Expected outcomes
 
-Some issues to work on:
+Some features to add/improve:
 
-1. Integrate open-source mailing list functionality to Casnode: https://github.com/casbin/casnode/issues/112
-2. Make it SEO friendly via SSR: https://github.com/casbin/casnode/issues/122
-3. The text area is at risk of XSS injection: https://github.com/casbin/casnode/issues/131
-4. The ranking pages do not display correctly: https://github.com/casbin/casnode/issues/132
-5. Use Casdoor as the authentication system: https://github.com/casbin/casnode/issues/145
-
-Some features to add:
-
-1. Anonymous-Post
+1. Further optimized the project UI: https://github.com/casbin/casnode/issues/400
+  Now casnode UI may break on some models, mainly mobile phones, we need to further optimize our project UI to fix it.
+2. Anonymous-Post
   Note: we may change whether to enable the node's anonymous function via the admin console.
-2. Improve the part of https://forum.casbin.com/api and https://forum.casbin.com/swagger/#/ that provides API externally.
-3. Implement [notes](https://forum.casbin.com/notes), so users could create and publish notes.
-4. Implement [timeline](https://forum.casbin.com/timeline), so users could post their thoughts and reply to others' thoughts there.
+3. Improve the part of https://forum.casbin.com/api and https://forum.casbin.com/swagger/#/ that provides API externally.
+4. Implement [notes](https://forum.casbin.com/notes), so users could create and publish notes: https://github.com/casbin/casnode/issues/341.
+4. Implement [timeline](https://forum.casbin.com/timeline), so users could post their thoughts and reply to others' thoughts there: https://github.com/casbin/casnode/issues/341
 5. Add RSS feed.
-6. Add some metrics (like Prometheus ...)
+6. Add some metrics, for Prometheus or others.
 7. Backup and recovery data from backup files.
 
 Code quality maintenance:
 
 1. Add configurable logs.
-  Notes: this may add completion log system for casnode using [zap](https://github.com/uber-go/zap).
+  Notes: this may add a completion log system for casnode using [zap](https://github.com/uber-go/zap).
 2. More friendly error handling instead of panic.
-  Node: this may be built on a well-established logging system
-3. Improve performance.
-  Such as sql query, cache, etc.
+  Notes: this may be built on a well-established logging system
+3. Add some commits for code.
+  Notes: This could be finished when you read the code.
+4. Improve performance, such as SQL query, cache, etc.
 
 And other [issues](https://github.com/casbin/casnode/issues) that may arise during the time.
 
