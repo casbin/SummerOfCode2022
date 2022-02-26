@@ -405,10 +405,17 @@ Medium
 
 #### Description
 
+[PHP-Casbin](https://github.com/php-casbin/php-casbin) An authorization library that supports access control models like ACL, RBAC, ABAC in PHP .
+
 #### Expected outcomes
 
-1. Full implementation of Casbin(go) by PHP, then fix [issues](https://github.com/php-casbin/php-casbin/issues).
-2. Improve some [extensions](https://github.com/php-casbin).
+1. Add `AddPermissionsForUser` API.
+2. Add cache for `g` function, refer to: https://github.com/casbin/casbin/blob/master/util/builtin_operators.go#L333.
+3. Integrate laravel's [Gates](https://laravel.com/docs/9.x/authorization#gates) in [Laravel-Authz](https://github.com/php-casbin/laravel-authz).
+4. Implementation of [WatcherEx](https://casbin.org/docs/en/watchers#watcherex), basic Watcher: [Swoole Redis watcher](https://github.com/php-casbin/swoole-redis-watcher) [Workerman Redis watcher](https://github.com/php-casbin/workerman-redis-watcher).
+5. Implement [propel-adapter](https://github.com/php-casbin/propel-adapter), [Propel](http://propelorm.org/) is a highly customizable and blazing fast ORM library for PHP.
+6. Consistent with the functionality of [Casbin Core Engine (Golang)](https://github.com/casbin/casbin).
+7. Bug fixes in [issues](https://github.com/php-casbin/php-casbin/issues), improve some [extensions](https://github.com/php-casbin).
 
 #### Skills required/preferred 
 
@@ -417,11 +424,11 @@ Medium
 
 #### Mentors
 
-[Jon Lee](https://github.com/techoner), Casbin member
+[Jon Lee](https://github.com/leeqvip), Casbin member
 
 #### Expected size of project (175 hour or 350 hour)
 
-175 hour
+350 hour
 
 #### Rating (Easy, Medium or Hard)
 
@@ -440,6 +447,12 @@ Pycasbin organization: https://github.com/pycasbin
 
 #### Expected outcomes
 
+1. Implement [redis-adapter](https://github.com/pycasbin/redis-watcher).
+2. Implement [etcd-adapter](https://github.com/pycasbin/etcd-watcher).
+3. Improve performance for `enforce()`.
+4. Complete implementation of PyCasbin-on-CPP.
+5. Reimplement the implementation of Pycasbin in `Django`, introduce Django's `Middleware`, `Caching`, `Logging`, and integrate the Django authentication system, and existing plugins: [django-casbin](https://github.com/pycasbin/django-casbin) [django-orm-adapter](https://github.com/pycasbin/django-orm-adapter).
+
 Some issues to work on: https://github.com/casbin/pycasbin/issues
 
 #### Skills required/preferred 
@@ -449,11 +462,11 @@ Some issues to work on: https://github.com/casbin/pycasbin/issues
 
 #### Mentors
 
-[Jon Lee](https://github.com/techoner), Casbin member
+[Jon Lee](https://github.com/leeqvip), Casbin member
 
 #### Expected size of project (175 hour or 350 hour)
 
-175 hour
+350 hour
 
 #### Rating (Easy, Medium or Hard)
 
@@ -522,6 +535,14 @@ The current progress is: https://github.com/casbin/lua-casbin
 
 #### Expected outcomes
 
+1、Implementation of `Watcher`, `Watcher` ensures policy consistency in multiple Casbin instances.
+2、Add cache for `g` function, refer to: https://github.com/casbin/casbin/blob/master/util/builtin_operators.go#L333.
+3、Add `AddPermissionsForUser` API.
+4、Add LoadPolicyArray() to load policy from array
+5、Improve performance for `enforce()`.
+6、Implement the built-in function `keyMatch5`.
+7、Fixes and refinements to lua-casbin's [extensions](https://github.com/casbin-lua).
+
 #### Skills required/preferred 
 
 1. Nginx
@@ -531,7 +552,7 @@ The current progress is: https://github.com/casbin/lua-casbin
 
 #### Mentors
 
-[Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Jon Lee](https://github.com/leeqvip), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
