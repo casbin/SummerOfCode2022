@@ -542,13 +542,13 @@ The current progress is: https://github.com/casbin/lua-casbin
 
 #### Expected outcomes
 
-1、Implementation of `Watcher`, `Watcher` ensures policy consistency in multiple Casbin instances.
-2、Add cache for `g` function, refer to: https://github.com/casbin/casbin/blob/master/util/builtin_operators.go#L333.
-3、Add `AddPermissionsForUser` API.
-4、Add LoadPolicyArray() to load policy from array
-5、Improve performance for `enforce()`.
-6、Implement the built-in function `keyMatch5`.
-7、Fixes and refinements to lua-casbin's [extensions](https://github.com/casbin-lua).
+1. Implementation of `Watcher`, `Watcher` ensures policy consistency in multiple Casbin instances.
+2. Add cache for `g` function, refer to: https://github.com/casbin/casbin/blob/master/util/builtin_operators.go#L333.
+3. Add `AddPermissionsForUser` API.
+4. Add LoadPolicyArray() to load policy from array
+5. Improve performance for `enforce()`.
+6. Implement the built-in function `keyMatch5`.
+7. Fixes and refinements to lua-casbin's [extensions](https://github.com/casbin-lua).
 
 #### Skills required/preferred
 
