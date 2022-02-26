@@ -157,6 +157,7 @@ Some features to add:
 Code quality maintenance:
 
 1. Add configurable logs.
+  Notes: this may add completion log system for casnode using [zap](https://github.com/uber-go/zap).
 2. More friendly error handling instead of panic.
   Node: this may be built on a well-established logging system
 3. Improve performance.
