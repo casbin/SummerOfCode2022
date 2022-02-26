@@ -57,9 +57,9 @@ Support more features and tune the performance in Casbin core engine. This will 
 
 Some issues to work on:
 
-1. Resolve policy conflicts: https://github.com/casbin/casbin/issues/338
+1. Make a Casbin middleware for go-zero: https://github.com/casbin/casbin/issues/957
 2. Improve the performance of the new BatchEnforce() API: https://github.com/casbin/casbin/issues/710
-3. Make an authorization plugin/middleware for kubernetes (k8s): https://github.com/casbin/k8s-authz/issues/2
+3. Make a default implementation of WatcherEx: https://github.com/casbin/casbin/issues/943
 4. Help solve issues for the 1st-party and 3rd-party middlewares
 
 #### Skills required/preferred
@@ -96,6 +96,14 @@ Build a UI-first centralized authentication / Single-Sign-On (SSO) platform base
 The current progress is: https://door.casdoor.com/. Source code: https://github.com/casdoor/casdoor. We want the student to continue the work.
 
 #### Expected outcomes
+
+Some issues to work on:
+
+1. Support SAML as IdP: https://github.com/casdoor/casdoor/issues/405
+2. Support password hashing in LDAP: https://github.com/casdoor/casdoor/issues/499
+3. Add Telegram provider: https://github.com/casdoor/casdoor/issues/341
+4. Add Casbin model and policy management: https://github.com/casdoor/casdoor/issues/95
+5. Design and develop a more beautiful frontend portal: https://github.com/casdoor/casdoor/issues/69
 
 #### Skills required/preferred
 
@@ -320,7 +328,6 @@ There are something need to be implemented，from easy to hard:
 - An article that describes your current work.
 
 **Note** Go beyond the existing casbin-rs projects, this is a job that is completely led by you. [casbin-grpc](https://github.com/casbin-rs/casbin-grpc/) and [casbin-raft](https://github.com/casbin-rs/casbin-raft/) are the results of some previous explorations.
-
 
 #### Skills required/preferred
 
