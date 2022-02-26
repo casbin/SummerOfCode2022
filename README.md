@@ -143,6 +143,27 @@ Some issues to work on:
 4. The ranking pages do not display correctly: https://github.com/casbin/casnode/issues/132
 5. Use Casdoor as the authentication system: https://github.com/casbin/casnode/issues/145
 
+Some features to add:
+
+1. Anonymous-Post
+  Note: we may change whether to enable the node's anonymous function via the admin console.
+2. Improve the part of https://forum.casbin.com/api and https://forum.casbin.com/swagger/#/ that provides API externally.
+3. Implement [notes](https://forum.casbin.com/notes), so users could create and publish notes.
+4. Implement [timeline](https://forum.casbin.com/timeline), so users could post their thoughts and reply to others' thoughts there.
+5. Add RSS feed.
+6. Add some metrics (like Prometheus ...)
+7. Backup and recovery data from backup files.
+
+Code quality maintenance:
+
+1. Add configurable logs.
+2. More friendly error handling instead of panic.
+  Node: this may be built on a well-established logging system
+3. Improve performance.
+  Such as sql query, cache, etc.
+
+And other [issues](https://github.com/casbin/casnode/issues) that may arise during the time.
+
 #### Skills required/preferred
 
 1. Golang (backend)
