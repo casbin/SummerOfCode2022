@@ -33,8 +33,9 @@ The student will be more likely selected if he/she:
 - [Casnode](#casnode)
 - [Casbin for C/C++](#casbin-for-cc)
 - [Casbin for Java](#casbin-for-java)
-- [Casbin for .NET](#casbin-for-net)
-- [Casbin Sam](#casbin-sam)
+- [Casbin for .NET](#casbin-for-.net)
+- [Casdoor for .NET](#casdoor-for-.net)
+- [Casbin for Cloud Native](#casbin-for-cloud-native)
 - [Casbin for Rust](#casbin-for-rust)
 - [Casbin for Node.js](#casbin-for-nodejs)
 - [Casbin Hub](#casbin-hub)
@@ -248,24 +249,28 @@ Medium
 
 #### Description
 
-The feature and ecosystem of Casbin.NET are gradually improving. We hope to provide complete features with a goal to Golang Casbin, excellent performance, and suitable for user experience in .NET.
+Casbin.NET v2 will release quickly. The new architecture provides excellent performance and flexible scalability and prepares for the addition of more imaginative and exciting features.
 
 #### Expected outcomes
 
-There are some important features that need to be implemented:
+1. Support more features:
+- a. Feature Request: subjectPriority(https://
+github.com/casbin/Casbin.NET/issues/238)
+- b. Support "in" special grammar(https://github.com/casbin/Casbin.NET/issues/198)
+- c. Validate and compile matcher when loading model(https://github.com/casbin/Casbin.NET/issues/228)
+- d. Improve the unit test coverage(https://github.com/casbin/Casbin.NET/issues/151)
+2. Enhance ecosystem:
+- a. Support ASP.NET Core and Blazor (Enhance [Casbin.AspNetCore](https://github.com/casbin-net/casbin-aspnetcore))
+- b. Provide Offical Redis adaptor/watcher.
 
-1. Rule Indexing feature : https://github.com/casbin/Casbin.NET/issues/132
-2. Parallel enforcing feature : https://github.com/casbin/Casbin.NET/issues/133
-2. Multiple request, policy, effect, matcher type support : https://github.com/casbin/Casbin.NET/issues/134
-
-#### Skills required/preferred
+#### Requirements
 
 1. .NET/C#
-2. Other languages that Casbin is written with
+2. ASP.NET Core
 
-#### Mentors
+#### Mentor
 
-[Joey Xie](https://github.com/xcaptain), Casbin member, [Zhikui Hua](https://github.com/huazhikui), Casbin member
+[Sagilio](https://github.com/sagilio), Casbin member
 
 #### Expected size of project (175 hour or 350 hour)
 
@@ -277,32 +282,31 @@ Medium
 
 
 
-### Casbin Sam
+### Casdoor for .NET
 
 #### Description
 
-A authorization service based on OAuth 2.x and support centralized authentication / Single-Sign-On (SSO) integration.
+Casdoor is a UI-first centralized authentication / Single-Sign-On (SSO) platform based on OAuth 2.0 / OIDC. We hope to provide a comprehensive and powerful SDK to make .NET application integrate with it easily.
 
 #### Expected outcomes
 
-Some issues to work on:
+1. Implement SDK:
+- a. Implement Casdoor.Client to call Casdoor APIs easily.
+- b. Implement Casdoor.AspNetCore to integrate ASP.NET Core with Casdoor.
+- c. Implement Casdoor.Native to integrate WPF or Maui with Casdoor
+2. Implement Samples:
+- a. Provide ASP.NET Core Web API, MVC and Blazor samples with the SDK.
+- b. Provide WPF or Maui smaples with the SDK.
 
-1. Use [Casbin.NET](https://github.com/casbin/Casbin.NET) and [Casbin.AspNetCore](https://github.com/casbin-net/casbin-aspnetcore) to authorizate.
-2. Provide Web APIs to manage users, roles and permissions.
-3. Support integrate OIDC authentication provider ([Identity Server 4](https://github.com/IdentityServer/IdentityServer4)) and [ASP.NET Identity](http://docs.identityserver.io/en/latest/quickstarts/6_aspnet_identity.html) to manage user and sgin in/out.
-4. Support be integrated to [Dapr](https://github.com/dapr/dapr) or [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) as authentication/authorization provider.
-
-The current progress is: https://github.com/casbin-net/casbin-sam. We want the student to continue the work.
-
-#### Skills required/preferred
+#### Requirements
 
 1. .NET/C#
-2. [Casbin.NET](https://github.com/casbin/Casbin.NET) and [Casbin.AspNetCore](https://github.com/casbin-net/casbin-aspnetcore)
-3. [Dapr](https://github.com/dapr/dapr) or [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe)
+2. ASP.NET Core
+3. WPF or Maui
 
-#### Mentors
+#### Mentor
 
-[Joey](https://github.com/xcaptain), Casbin member, [Zhikui Hua](https://github.com/huazhikui), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Sagilio](https://github.com/sagilio), Casbin member
 
 #### Expected size of project (175 hour or 350 hour)
 
@@ -311,6 +315,45 @@ The current progress is: https://github.com/casbin-net/casbin-sam. We want the s
 #### Rating (Easy, Medium or Hard)
 
 Medium
+
+
+
+### Casbin for Cloud Native
+
+#### Description
+
+Currently, Casbin has limited adaptability in the cloud-native field. We hope to use kubebuilder 3.x to refact the k8s-authz(https://github.com/casbin/k8s-authz) and provide CRD based model and policy management. Enhance model parse to compatible with k8s better.
+
+#### Expected outcomes
+
+1. Refact k8s-authz
+- a. Porvide predefined `r` or `p` tokens and custom function for k8s.
+- b. Provide CRD based model and policy management.
+- c. Provide Client and helm integration.
+- d. Make kubesphere-athz compatible with the new k8s-authz.
+2. Enhance ecosystem:
+- a. Implement Casbin middleware for Dapr(https://docs.dapr.io/reference/components-reference/supported-middleware/)
+- b. Explore more usage scenarios on Cloud Native.
+
+#### Requirements
+
+1. Golang
+2. K8s (kubebuilder) and Cloud Native
+3. Service Mesh and Dapr(https://dapr.io/)
+
+#### Mentor
+
+[Sagilio](https://github.com/sagilio), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+
+#### Expected size of project (175 hour or 350 hour)
+
+350 hour
+
+#### Rating (Easy, Medium or Hard)
+
+Hard
+
+
 
 ### Casbin for Rust
 
