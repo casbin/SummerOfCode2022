@@ -33,8 +33,8 @@ The student will be more likely selected if he/she:
 - [Casnode](#casnode)
 - [Casbin for C/C++](#casbin-for-cc)
 - [Casbin for Java](#casbin-for-java)
-- [Casbin for .NET](#casbin-for-.net)
-- [Casdoor for .NET](#casdoor-for-.net)
+- [Casbin for .NET](#casbin-for-net)
+- [Casdoor for .NET](#casdoor-for-net)
 - [Casbin for Cloud Native](#casbin-for-cloud-native)
 - [Casbin for Rust](#casbin-for-rust)
 - [Casbin for Node.js](#casbin-for-nodejs)
@@ -322,7 +322,7 @@ Medium
 
 #### Description
 
-Currently, Casbin has limited adaptability in the cloud-native field. We hope to use kubebuilder 3.x to refact the k8s-authz(https://github.com/casbin/k8s-authz) and provide CRD based model and policy management. Enhance model parse to compatible with k8s better.
+Currently, Casbin has limited adaptability in the cloud-native field. We hope to use kubebuilder 3.x to refact the [k8s-authz](https://github.com/casbin/k8s-authz) and provide CRD based model and policy management. Enhance model parse to compatible with k8s better.
 
 #### Expected outcomes
 
@@ -332,14 +332,14 @@ Currently, Casbin has limited adaptability in the cloud-native field. We hope to
 - c. Provide Client and helm integration.
 - d. Make kubesphere-athz compatible with the new k8s-authz.
 2. Enhance ecosystem:
-- a. Implement Casbin middleware for Dapr(https://docs.dapr.io/reference/components-reference/supported-middleware/)
+- a. Implement Casbin middleware for [Dapr](https://docs.dapr.io/reference/components-reference/supported-middleware/)
 - b. Explore more usage scenarios on Cloud Native.
 
 #### Requirements
 
 1. Golang
-2. K8s (kubebuilder) and Cloud Native
-3. Service Mesh and Dapr(https://dapr.io/)
+2. K8s ([kubebuilder](https://book.kubebuilder.io/)) and Cloud Native
+3. Service Mesh and [Dapr](https://dapr.io/)
 
 #### Mentor
 
