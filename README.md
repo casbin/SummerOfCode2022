@@ -62,7 +62,7 @@ Some issues to work on:
 3. Make an authorization plugin/middleware for kubernetes (k8s): https://github.com/casbin/k8s-authz/issues/2
 4. Help solve issues for the 1st-party and 3rd-party middlewares
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Golang
 2. Other languages that Casbin is written with
@@ -75,7 +75,7 @@ Some issues to work on:
 
 350 hour
 
-#### Rating (Easy, Medium or Hard) 
+#### Rating (Easy, Medium or Hard)
 
 Medium
 
@@ -97,7 +97,7 @@ The current progress is: https://door.casdoor.com/. Source code: https://github.
 
 #### Expected outcomes
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Golang (backend)
 2. Javascript + React + Ant Design (frontend)
@@ -135,7 +135,7 @@ Some issues to work on:
 4. The ranking pages do not display correctly: https://github.com/casbin/casnode/issues/132
 5. Use Casdoor as the authentication system: https://github.com/casbin/casnode/issues/145
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Golang (backend)
 2. Javascript + React (frontend)
@@ -165,7 +165,7 @@ The current progress is: https://github.com/casbin/casbin-cpp
 
 #### Expected outcomes
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. C/C++
 2. Golang (only need to read code)
@@ -200,7 +200,7 @@ Some issues to work on:
 4. Improve the user experience of the SpringBoot middleware: https://github.com/jcasbin/casbin-spring-boot-starter
 5. Make an example project that uses our Shiro middleware: https://github.com/jcasbin/shiro-casbin
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Java
 2. Other languages that Casbin is written with
@@ -233,7 +233,7 @@ There are some important features that need to be implemented:
 2. Parallel enforcing feature : https://github.com/casbin/Casbin.NET/issues/133
 2. Multiple request, policy, effect, matcher type support : https://github.com/casbin/Casbin.NET/issues/134
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. .NET/C#
 2. Other languages that Casbin is written with
@@ -269,7 +269,7 @@ Some issues to work on:
 
 The current progress is: https://github.com/casbin-net/casbin-sam. We want the student to continue the work.
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. .NET/C#
 2. [Casbin.NET](https://github.com/casbin/Casbin.NET) and [Casbin.AspNetCore](https://github.com/casbin-net/casbin-aspnetcore)
@@ -287,8 +287,6 @@ The current progress is: https://github.com/casbin-net/casbin-sam. We want the s
 
 Medium
 
-
-
 ### Casbin for Rust
 
 #### Description
@@ -297,32 +295,41 @@ With Casbin community's effort, the Rust version of Casbin is now mature and rea
 
 #### Expected outcomes
 
-There are something need to be implemented:
+There are something need to be implemented，from easy to hard:
 
-1. Rust version of [Casbin-Server](https://github.com/casbin/casbin-server)
+1. Embrace Rust 2021 edition [Easy]
 
-- Use [Tonic](https://github.com/hyperium/tonic) to implement a gRPC server
+- Complete the migration from edition 2018 to edition 2021.
+- Clean up stale and meaningless dependencies and make clippy happy.
 
-- Compatible with multiple adapters: [Diesel-Adapter](https://github.com/casbin-rs/diesel-adapter), [Sqlx-Adapter](https://github.com/casbin-rs/sqlx-adapter), [YAML-Adapter](https://github.com/casbin-rs/yaml-adapter)
+**Note** This work will help you get familiar with the Rust toolchain and the existing work of Casbin-RS, so please complete it for at least two repos.
 
-2. JSON Adapter for Casbin-RS
+2. Continuous maintenance of the surrounding ecology [Medium]
 
-- Fully Asynchronous runtime support with [Tokio](https://github.com/tokio-rs/tokio) and [async-std](https://github.com/async-rs/async-std)
+- Implement a middleware for [Poem](https://github.com/poem-web/poem) with examples.
+- An article introducing how to use casbin-rs with poem.
+- Participate in the maintenance of at least one other repo, such as [sqlx-adapter](https://github.com/casbin-rs/sqlx-adapter) or [casbin-grpc](https://github.com/casbin-rs/casbin-grpc/).
 
-- Support read and write
+**Note** This work will help you understand the mechanics of casbin's operation. In addition, we hope you can present your works, which will become an important milestone for you in the casbin community.
 
-3. Rocket Middleware for Casbin-RS ([#93](https://github.com/casbin/casbin-rs/issues/93))
+3. Explore casbin-rs in real-world/distributed applications [Hard]
 
-- Implement a middleware for [Rocket](https://github.com/SergioBenitez/Rocket) using [Fairings](https://rocket.rs/v0.4/guide/fairings/#fairings)
+- You can choose to:
+  - Implement a real-world application with casbin-rs, Or
+  - Implementing [openraft](https://github.com/datafuselabs/openraft)-based distributed casbin clusters/plugins.
+- An article that describes your current work.
 
-#### Skills required/preferred 
+**Note** Go beyond the existing casbin-rs projects, this is a job that is completely led by you. [casbin-grpc](https://github.com/casbin-rs/casbin-grpc/) and [casbin-raft](https://github.com/casbin-rs/casbin-raft/) are the results of some previous explorations.
+
+
+#### Skills required/preferred
 
 1. Rust
 2. Other languages that Casbin is written with
 
 #### Mentors
 
-[Yisheng Chai](https://github.com/hackerchai), Casbin member, [Cheng JIANG](https://github.com/GopherJ), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Chojan Shang](https://github.com/PsiACE), Casbin member, [Yisheng Chai](https://github.com/hackerchai), Casbin member, [Cheng JIANG](https://github.com/GopherJ), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
@@ -350,7 +357,7 @@ Some issues to work on:
 
 - Sequelize v6 compatibility: addPolicies & removePolicies problem(https://github.com/casbin/node-casbin/issues/207)
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. JavaScript (Node.js/TypeScript)
 2. Other languages that Casbin is written with
@@ -381,7 +388,7 @@ We need to implement the following features:
 
 2. Integrate the [Casbin-Online-Editor](https://casbin.org/en/editor) is used to test or debug the model and policy shared by users.
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Golang (Backend)
 2. React (Frontend)
@@ -410,7 +417,7 @@ Medium
 1. Full implementation of Casbin(go) by PHP, then fix [issues](https://github.com/php-casbin/php-casbin/issues).
 2. Improve some [extensions](https://github.com/php-casbin).
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. PHP
 2. Casbin
@@ -442,7 +449,7 @@ Pycasbin organization: https://github.com/pycasbin
 
 Some issues to work on: https://github.com/casbin/pycasbin/issues
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Python
 2. Other languages that Casbin is written with
@@ -490,7 +497,7 @@ Some issues to work on:
 4. Support domains in model: https://github.com/casbin/casbin.js/issues/25
 5. Resolve Casbin.js 0.1.0 with react-scripts 4.0.2 conflict: https://github.com/casbin/casbin.js/issues/28
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Javascript
 2. Node-Casbin
@@ -522,7 +529,7 @@ The current progress is: https://github.com/casbin/lua-casbin
 
 #### Expected outcomes
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Nginx
 2. OpenResty
@@ -555,7 +562,7 @@ The current progress is: https://github.com/casbin/dart-casbin
 
 You will be responsible for the design and making of the Dart port with the help of the mentor, most of Casbin's functionalities should work.
 
-#### Skills required/preferred 
+#### Skills required/preferred
 
 1. Dart
 2. Other languages that Casbin is written with.
@@ -578,7 +585,7 @@ Medium
 
 #### Description
 
-We already have a Swift version Casbin called [SwiftCasbin](https://github.com/casbin/SwiftCasbin.git). It already works on all primary OSs, like Windows, Linux, macOS,iOS,tvOS,watchOS. Most of Casbin's functionalities (for example 90%) should work. 
+We already have a Swift version Casbin called [SwiftCasbin](https://github.com/casbin/SwiftCasbin.git). It already works on all primary OSs, like Windows, Linux, macOS,iOS,tvOS,watchOS. Most of Casbin's functionalities (for example 90%) should work.
 
 The current progress is: https://github.com/casbin/SwiftCasbin
 
