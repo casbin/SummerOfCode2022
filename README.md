@@ -519,8 +519,7 @@ Currently, we still lack the middlewares for Angular, React and Vue. These new J
 
 #### Mentors
 
-[Zihui Liu](https://github.com/kingiw), Casbin member
-[Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Xinyu Zhou](https://github.com/Zxilly), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
