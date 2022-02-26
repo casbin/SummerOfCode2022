@@ -498,10 +498,7 @@ Quite a lot of users want to use Casbin to control web frontend UI elements, lik
 2. Some buttons should be grayed-out for users with no permission to click them.
 3. A list can only show filtered items based on a user's permission rights.
 
-Currently, Node-Casbin already supports to run in browser. But the API like `enforce()` is still not friendly to frontend developers to control the visibility of a button. So we need:
-
-1. A frontend developer friendly API for authorization based on Casbin, e.g., `isVisible(button_id)`
-2. A mechanism to load model and policy data from backend. Of course we assume the backend also uses a Casbin implementation.
+Over time we have made node-casbin a cross-platform Javascript permission control library and have called the new library casbin.js. The next step is to refactor node-casbin to a casbin.js-based wrapper. Another possible idea is create a `browser-casbin` for front-end developers with front-end friendly api. 
 
 The current progress is: https://github.com/casbin/casbin.js
 
@@ -509,27 +506,25 @@ Currently, we still lack the middlewares for Angular, React and Vue. These new J
 
 #### Expected outcomes
 
-Some issues to work on:
-
-1. Make a React authz middleware for Casbin.js: https://github.com/casbin/casbin.js/issues/26
-2. Make a Vue authz middleware for Casbin.js: https://github.com/casbin/casbin.js/issues/27
-3. Support Key Matching: https://github.com/casbin/casbin.js/issues/15
-4. Support domains in model: https://github.com/casbin/casbin.js/issues/25
-5. Resolve Casbin.js 0.1.0 with react-scripts 4.0.2 conflict: https://github.com/casbin/casbin.js/issues/28
+1. Sync progress with node-casbin
+2. Update vue-authz and react-authz to new casbin.js.
+3. Refactor node-casbin to casbin.js wrapper.
 
 #### Skills required/preferred
 
-1. Javascript
+1. Typescript
 2. Node-Casbin
+3. Vue or React development experience
 3. At least one backend language like Golang
 
 #### Mentors
 
-[Zihui Liu](https://github.com/kingiw), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Zihui Liu](https://github.com/kingiw), Casbin member
+[Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
-175 hour
+350 hour
 
 #### Rating (Easy, Medium or Hard)
 
