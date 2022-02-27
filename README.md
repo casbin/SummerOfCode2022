@@ -216,15 +216,18 @@ Hard
 
 In Java world, Apache Shiro and Spring Security are very popular security frameworks. We need to find ways to improve the Casbin middlewares for both of them, so Shiro and Spring Security users can use jCasbin without many migrating efforts.
 
-Another work is to develop jCasbin' middleware for the popular Java web frameworks except Spring such as Play and Vert.x, like how we did it for Golang: https://casbin.org/docs/en/middlewares
+Another work is to develop jCasbin' middleware for the popular Java web frameworks except Spring such as Play, like how we did it for Golang: https://casbin.org/docs/en/middlewares
+
+#### Expected outcomes
 
 Some issues to work on:
 
 1. Make a Play Framework middleware: https://github.com/casbin/jcasbin/issues/104
-2. Make a Vert.x middleware: https://github.com/casbin/jcasbin/issues/105
-3. Fix the bug about "ABAC with policy rule" doesn't work: https://github.com/casbin/jcasbin/issues/145
-4. Improve the user experience of the SpringBoot middleware: https://github.com/jcasbin/casbin-spring-boot-starter
-5. Make an example project that uses our Shiro middleware: https://github.com/jcasbin/shiro-casbin
+2. Sync more features about "in" special grammar from Go-Casbin: https://casbin.org/docs/en/syntax-for-models#special-grammer
+3. Make a default implementation of WatcherEx and migrate Watcher to WatcherEx : https://github.com/casbin/casbin/issues/943
+4. Provide more offical  adapter/watcher like Golang: https://casbin.org/docs/en/watchers.
+5. Fix the bug about ClassCastException for Strings within grouping fucntions: https://github.com/casbin/jcasbin/issues/254
+6. Help solve issues for the 1st-party and 3rd-party middlewares
 
 #### Skills required/preferred
 
@@ -233,7 +236,7 @@ Some issues to work on:
 
 #### Mentors
 
-[Zhengjin Fang](https://github.com/fangzhengjin), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Yang Tang](https://github.com/tangyang9464), Casbin member, [Zhengjin Fang](https://github.com/fangzhengjin), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
