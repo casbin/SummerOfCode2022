@@ -45,6 +45,7 @@ The student will be more likely selected if he/she:
 - [Casbin for Lua](#casbin-for-lua)
 - [Casbin for Dart](#casbin-for-dart)
 - [Casbin for Swift](#casbin-for-swift)
+- [Casbin Mesh](#casbin-mesh)
 
 
 
@@ -668,8 +669,6 @@ You will be responsible for the design and making of the Dart port with the help
 
 Medium
 
-
-
 ### Casbin for Swift
 
 #### Description
@@ -702,3 +701,44 @@ There are still many bugs and missing features in SwiftCasbin. Moreover, we also
 #### Rating (Easy, Medium or Hard)
 
 Medium
+
+### Casbin Mesh
+
+#### Description
+
+Last summer, we started a new project called Casbin-Mesh which allows us to deploy the Casbin to many nodes using the raft consensus algorithm to handle rapidly increasing data, which raises the throughout of read-only transactions.
+
+
+#### Expected outcomes
+
+However, there are still many works that need to be done.
+
+1. The bottleneck of memory data structure
+- Reconstruction the memory data model
+  - We are going to use the buffer pool manager handling very large data that over then RAM
+2. The overhead of full-table scanning
+- Indexes
+  - Create indexes for all policies
+  - Use Indexes to avoid full-table scanning
+- Basic query optimization
+3. Transactions Implementation
+
+#### Skills required/preferred
+
+1. Golang
+2. At least you need to be familiar with the basic concepts of the query optimization, indexing (hash index, B+ tree index), multi-version concurrency control.
+2. (preferred) Had taken database lectures (Such as CMU 15-445 etc.) 
+
+
+
+#### Mentors
+
+[WenyXu](https://github.com/WenyXu), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+
+#### Expected size of project (175 hour or 350 hour)
+
+350 hour
+
+#### Rating (Easy, Medium or Hard)
+
+Hard
