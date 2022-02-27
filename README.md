@@ -412,13 +412,17 @@ Hard
 
 #### Description
 
-Improving the user experience of Node-Casbin will be our focus. Currently, Node-Casbin provides a set of asynchronous API, if we can provide a set of synchronous API, it will be a great experience.
+Improving the user experience of Node-Casbin will be our focus.
 
 #### Expected outcomes
 
 Some issues to work on:
 
-- Support a full set of Sync API like enforcer.enforce()(https://github.com/casbin/node-casbin/issues/224)
+- Sync GetImplicitResourcesForUser method(https://github.com/casbin/node-casbin/issues/344)
+
+- Sync UpdateGroupingPolicy and UpdateNamedGroupingPolicy method(https://github.com/casbin/node-casbin/issues/324)
+
+- Improve built-in method of matcher(https://github.com/casbin/node-casbin/issues/332)
 
 - Scaling Access Control Lists for multi-million users(https://github.com/casbin/node-casbin/issues/147)
 
