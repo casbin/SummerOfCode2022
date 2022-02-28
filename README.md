@@ -335,6 +335,8 @@ Currently, Casbin has limited adaptability in the cloud-native field. We hope to
 - b. Provide CRD based model and policy management.
 - c. Provide Client and helm integration.
 - d. Make kubesphere-athz compatible with the new k8s-authz.
+- e. Improve test coverage for the new [k8s-authz](https://github.com/casbin/k8s-authz) and [envoy-authz](https://github.com/casbin/envoy-authz).
+
 2. Enhance ecosystem:
 - a. Implement Casbin middleware for [Dapr](https://docs.dapr.io/reference/components-reference/supported-middleware/)
 - b. Explore more usage scenarios on Cloud Native.
@@ -347,7 +349,7 @@ Currently, Casbin has limited adaptability in the cloud-native field. We hope to
 
 #### Mentor
 
-[Sagilio](https://github.com/sagilio), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Sagilio](https://github.com/sagilio), Casbin member, [Ashish](https://github.com/ashish493), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
