@@ -720,12 +720,12 @@ However, there are still many works that need to be done.
 1. The bottleneck of memory data structure
 - Reconstruction the memory data model
   - We are going to use the buffer pool manager handling very large data that over then RAM
-2. The overhead of full-table scanning
+2. Avoiding full-table scanning
 - Indexes
   - Create indexes for all policies
   - Use Indexes to avoid full-table scanning
 - Basic query optimization
-3. Transactions Implementation
+3. Transaction Implementations
 
 #### Skills required/preferred
 
