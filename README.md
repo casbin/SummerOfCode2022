@@ -710,6 +710,8 @@ Medium
 
 Last summer, we started a new project called Casbin-Mesh which allows us to deploy the Casbin to many nodes using the raft consensus algorithm to handle rapidly increasing data, which raises the throughout of read-only transactions.
 
+The current progress is: https://github.com/casbin/casbin-mesh
+
 
 #### Expected outcomes
 
