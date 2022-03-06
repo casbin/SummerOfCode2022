@@ -186,20 +186,36 @@ Easy
 
 #### Description
 
-We already have a C/C++ version Casbin called [Casbin-CPP](https://github.com/casbin/casbin-cpp). It already works on all primary OSs, like Windows, Linux, macOS. Most of Casbin's functionalities (for example 90%) should work. There are still many bugs and missing features in Casbin-CPP. Moreover, we also need to make authz middlewares for other C++ projects like [Mosquitto](https://github.com/casbin/casbin-cpp/issues/79 ) and adapters for DB. We also have plan to make Casbin-CPP as a base layer to build the next-generation PyCasbin and PHP-Casbin on top of it (see [PyCasbin on CPP](https://github.com/casbin/pycasbin-on-cpp )) for better performance (a lot of Python packages like numpy and tensorflow rely on the underlying C++ code). So Casbin-CPP needs to provide necessary help if needed for PyCasbin and PHP-Casbin developers.
+<!-- We already have a C/C++ version Casbin called [Casbin-CPP](https://github.com/casbin/casbin-cpp). It already works on all primary OSs, like Windows, Linux, macOS. Most of Casbin's functionalities (for example 90%) should work. There are still many bugs and missing features in Casbin-CPP. Moreover, we also need to make authz middlewares for other C++ projects like [Mosquitto](https://github.com/casbin/casbin-cpp/issues/79 ) and adapters for DB. We also have plan to make Casbin-CPP as a base layer to build the next-generation PyCasbin and PHP-Casbin on top of it (see [PyCasbin on CPP](https://github.com/casbin/pycasbin-on-cpp )) for better performance (a lot of Python packages like numpy and tensorflow rely on the underlying C++ code). So Casbin-CPP needs to provide necessary help if needed for PyCasbin and PHP-Casbin developers. -->
+
+[Casbin-CPP](https://github.com/casbin/casbin-cpp) provides various models for advanced authorization solutions in C++. It currently supports all the major OS's including Windows, Linux and macOS.
+`casbin-cpp` has seen a major revamp to make the library as functional as its Golang counterparts.
+This project uses [CMake](https://cmake.org) for building, packaging, and installation, and CTest for testing.
+Apart from that, `casbin-cpp` supports python bindings through `pybind11`.
 
 The current progress is: https://github.com/casbin/casbin-cpp
 
 #### Expected outcomes
 
+Here is a list of tasks we're looking forward to work on this summer on a priority basis:
+
+- [casbin-cpp#79](https://github.com/casbin/casbin-cpp/issues/79): Developing authz middlewares for other C++ projects like [Mosquitto](https://github.com/eclipse/mosquitto).
+- [casbin-cpp#115](https://github.com/casbin/casbin-cpp/issues/115): Developing authz middleware for [Envoy proxy](https://github.com/envoyproxy/envoy).
+- [casbin-cpp#100](https://github.com/casbin/casbin-cpp/issues/100): Various features of Casbin-CPP can be used in [Glewlwyd](https://github.com/babelouest/glewlwyd), a C++ based server. We need to investigate and 
+try to integrate casbin-cpp into Glewlwyd.
+- [casbin-cpp#190](https://github.com/casbin/casbin-cpp/issues/190): Unit testing and benchmarking for multithreaded workloads is in backlog and needs to be investigated thoroughly.
 #### Skills required/preferred
 
-1. C/C++
+1. C++
 2. Golang (only need to read code)
+3. CMake
+4. Python
 
 #### Mentors
 
-[Joey Xie](https://github.com/xcaptain), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
+[Yash Pandey](https://github.com/EmperorYP7), Casbin member,
+[Joey Xie](https://github.com/xcaptain), Casbin member,
+[Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
