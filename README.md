@@ -231,20 +231,26 @@ Hard
 
 #### Description
 
-In Java world, Apache Shiro and Spring Security are very popular security frameworks. We need to find ways to improve the Casbin middlewares for both of them, so Shiro and Spring Security users can use jCasbin without many migrating efforts.
-
-Another work is to develop jCasbin' middleware for the popular Java web frameworks except Spring such as Play, like how we did it for Golang: https://casbin.org/docs/en/middlewares
+jCasbin needs to be kept in sync with the features of casbin-golang at all times. For example, the special syntax of ``in``, the update of the role manager, etc.
+At the same time, it is also necessary to maintain and integrate the unique ecology of Java, such as ``casbin-spring-boot-starter`` and ``Play middleware``, etc.
+Performance is also a point of great concern, so ``benchmark`` needs to be done.
 
 #### Expected outcomes
 
-Some issues to work on:
-
-1. Make a Play Framework middleware: https://github.com/casbin/jcasbin/issues/104
-2. Sync more features about "in" special grammar from Go-Casbin: https://casbin.org/docs/en/syntax-for-models#special-grammer
-3. Make a default implementation of WatcherEx and migrate Watcher to WatcherEx : https://github.com/casbin/casbin/issues/943
-4. Provide more offical  adapter/watcher like Golang: https://casbin.org/docs/en/watchers.
-5. Fix the bug about ClassCastException for Strings within grouping fucntions: https://github.com/casbin/jcasbin/issues/254
-6. Help solve issues for the 1st-party and 3rd-party middlewares
+1. More features support
+- Reimplement the role manager: [jcasbin#261](https://github.com/casbin/jcasbin/issues/261)
+- Sync more features about "in" special grammar from Go-Casbin: [special-grammer](https://casbin.org/docs/en/syntax-for-models#special-grammer)
+- Make a default implementation of WatcherEx and migrate Watcher to WatcherEx : Default implementation of WatcherEx [casbin#943](https://github.com/casbin/casbin/issues/943)
+- Fix the bug about ClassCastException for Strings within grouping fucntions: ClassCastException for Strings within grouping fucntions [jcasbin#254](https://github.com/casbin/jcasbin/issues/254)
+2. Continuous maintenance of the surrounding ecology
+- Optimize casbin-spring-boot-starter and other middlewares dependencies. [casbin-spring-boot-starter](https://github.com/jcasbin/casbin-spring-boot-starter)
+- Provide more offical adapter/watcher like Golang: [watchers](https://casbin.org/docs/en/watchers.)
+- Make a Play Framework middleware: Create a jCasbin authorization module for Play [jcasbin#104](https://github.com/casbin/jcasbin/issues/104)
+- Help solve issues for the 1st-party and 3rd-party middlewares.
+3. Benchmark and performance optimization
+- Benchmarking jCasbin and the integrations with main middlewares.
+- Find and resolve performance bottlenecks.
+- Explore the alternative in large-scale scenarios 
 
 #### Skills required/preferred
 
