@@ -244,7 +244,7 @@ Performance is also a point of great concern, so ``benchmark`` needs to be done.
 - Fix the bug about ClassCastException for Strings within grouping fucntions: ClassCastException for Strings within grouping fucntions [jcasbin#254](https://github.com/casbin/jcasbin/issues/254)
 2. Continuous maintenance of the surrounding ecology
 - Optimize casbin-spring-boot-starter and other middlewares dependencies. [casbin-spring-boot-starter](https://github.com/jcasbin/casbin-spring-boot-starter)
-- Provide more offical adapter/watcher like Golang: [watchers](https://casbin.org/docs/en/watchers.)
+- Provide more offical adapter/watcher like Golang: [watchers](https://casbin.org/docs/en/watchers).
 - Make a Play Framework middleware: Create a jCasbin authorization module for Play [jcasbin#104](https://github.com/casbin/jcasbin/issues/104)
 - Help solve issues for the 1st-party and 3rd-party middlewares.
 3. Benchmark and performance optimization
