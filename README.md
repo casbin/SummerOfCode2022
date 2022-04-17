@@ -31,10 +31,12 @@ The student will be more likely selected if he/she:
 - [Casbin Core Engine (Golang)](#casbin-core-engine-golang)
 - [Casdoor](#casdoor)
 - [Casnode](#casnode)
+- [Casbin Dashboard](#casbin-dashboard)
 - [Casbin for C/C++](#casbin-for-cc)
 - [Casbin for Java](#casbin-for-java)
 - [Casbin for .NET](#casbin-for-net)
 - [Casdoor for .NET](#casdoor-for-net)
+- [Casbin Sam](#casbin-sam)
 - [Casbin for Cloud Native](#casbin-for-cloud-native)
 - [Casbin for Rust](#casbin-for-rust)
 - [Casbin for Node.js](#casbin-for-nodejs)
@@ -182,6 +184,44 @@ Easy
 
 
 
+### Casbin Dashboard
+
+#### Description
+
+Build a web UI dashboard/admin portal for Casbin & Casbin-Server.
+
+#### Expected outcomes
+
+It can:
+
+1. Manage models, adapters, enforcers. The adapter manager should handle different DBs.
+2. Model editor with a syntax and semantic validator.
+3. Policy editor, it should be able to handle 10,000+ more rules.
+4. A test page to make example request to Casbin and get response, like Postman. So users can test their model and policy.
+5. Authentication and authorization for the dashboard itself. Of course authorization will be implemented in Casbin (we proudly dogfood our own product :))
+
+The current progress is: https://dashboard.casbin.com . Source code: https://github.com/casbin/casbin-dashboard. We want the student to continue the work.
+
+#### Skills required/preferred
+
+1. Golang (backend)
+2. Javascript + React + Ant Design (frontend)
+3. Casbin
+
+#### Mentors
+
+[Yang Luo](https://github.com/hsluoyz), Casbin founder
+
+#### Expected size of project (175 hour or 350 hour)
+
+175 hour
+
+#### Rating (Easy, Medium or Hard)
+
+Easy
+
+
+
 ### Casbin for C/C++
 
 #### Description
@@ -294,7 +334,7 @@ github.com/casbin/Casbin.NET/issues/238)
 1. .NET/C#
 2. ASP.NET Core
 
-#### Mentor
+#### Mentors
 
 [Sagilio](https://github.com/sagilio), Casbin member
 
@@ -330,9 +370,44 @@ Casdoor is a UI-first centralized authentication / Single-Sign-On (SSO) platform
 2. ASP.NET Core
 3. WPF or Maui
 
-#### Mentor
+#### Mentors
 
 [Sagilio](https://github.com/sagilio), Casbin member
+
+#### Expected size of project (175 hour or 350 hour)
+
+175 hour
+
+#### Rating (Easy, Medium or Hard)
+
+Medium
+
+
+
+### Casbin Sam
+
+#### Description
+
+An authorization service based on OAuth 2.x and support centralized authentication / Single-Sign-On (SSO) integration. It can:
+
+#### Expected outcomes
+
+1. Use [Casbin.NET](https://github.com/casbin/Casbin.NET) and [Casbin.AspNetCore](https://github.com/casbin-net/casbin-aspnetcore) to authorizate.
+2. Provide Web APIs to manage users, roles and permissions.
+3. Support integrate OIDC authentication provider ([Identity Server 4](https://github.com/IdentityServer/IdentityServer4)) and [ASP.NET Identity](http://docs.identityserver.io/en/latest/quickstarts/6_aspnet_identity.html) to manage user and sgin in/out.
+4. Support be integrated to [Dapr](https://github.com/dapr/dapr) or [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) as authentication/authorization provider.
+
+The current progress is: https://github.com/casbin-net/casbin-sam. We want the student to continue the work.
+
+#### Requirements
+
+1. .NET/C#
+2. [Casbin.NET](https://github.com/casbin/Casbin.NET) and [Casbin.AspNetCore](https://github.com/casbin-net/casbin-aspnetcore)
+3. [Dapr](https://github.com/dapr/dapr) or [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe)
+
+#### Mentors
+
+[Sagilio](https://github.com/sagilio), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
 
 #### Expected size of project (175 hour or 350 hour)
 
@@ -369,7 +444,7 @@ Currently, Casbin has limited adaptability in the cloud-native field. We hope to
 2. K8s ([kubebuilder](https://book.kubebuilder.io/)) and Cloud Native
 3. Service Mesh and [Dapr](https://dapr.io/)
 
-#### Mentor
+#### Mentors
 
 [Sagilio](https://github.com/sagilio), Casbin member, [Ashish](https://github.com/ashish493), Casbin member, [Yang Luo](https://github.com/hsluoyz), Casbin founder
 
